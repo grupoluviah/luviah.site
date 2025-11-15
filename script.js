@@ -1,55 +1,59 @@
-function scrollToContact() {
-  document.getElementById("contact").scrollIntoView({ behavior: "smooth" });
-}
-
-function scrollToServices() {
-  document.getElementById("services").scrollIntoView({ behavior: "smooth" });
-}
-
-
-const form = document.getElementById("contactForm");
-const status = document.createElement("p");
-status.style.textAlign = "center";
-status.style.marginTop = "10px";
-form.appendChild(status);
-
-form.addEventListener("submit", function(e) {
-  e.preventDefault();
-
-  // Validação básica
-  if (!form.from_name.value || !form.from_email.value || !form.message.value) {
-    status.textContent = "Por favor, preencha todos os campos.";
-    status.style.color = "red";
-    return;
+  // Scroll suave
+  function scrollToContact() {
+    document.getElementById("contact").scrollIntoView({ behavior: "smooth" });
   }
 
-  const btn = form.querySelector("button");
-  btn.disabled = true;
-  btn.innerText = "Enviando...";
+  function scrollToServices() {
+    document.getElementById("services").scrollIntoView({ behavior: "smooth" });
+  }
 
-  const serviceID = "service_1kk64ud";
-  const templateID = "template_ckm1j2w";
-  const apiKey = "c6Cvcehu-lsPl-1yLPown";
+emailjs.init("G5DWAaI7Lndmxn65L");
+
+document.getElementById("contactForm").addEventListener("submit", function (event) {
+  event.preventDefault();
 
   const formData = {
-    from_name: form.from_name.value,
-    from_email: form.from_email.value,
-    message: form.message.value
-  };
+    name: document.getElementById("name").value,
+    email: document.getElementById("email").value,
+    phone: document.getElementById("phone").value,
+    message: document.getElementById("message").value,
+  }
 
-  emailjs.send(serviceID, templateID, formData, apiKey)
+  const serviceID = "service_nrfr48i"
+  const templateID = "template_ckm1j2w"
+  const submitButton = document.getElementById("submit_button")
+  submitButton.textContent = "Enviando..."
+  submitButton.disable = true;
+
+  emailjs.send(serviceID,templateID, formData)
     .then(() => {
-      status.textContent = "Mensagem enviada com sucesso!";
-      status.style.color = "green";
-      form.reset();
-      btn.disabled = false;
-      btn.innerText = "Enviar Mensagem";
+      Toastify({
+        text: "Mensagem enviada com sucesso!",
+        duration: 3000,
+        style: {
+          background: "#28a745",
+          color: "#f4f4f4"
+        }
+        }).showToast();
+
+        document.getElementById("contactForm").reset();
     })
     .catch((error) => {
-      status.textContent = "Erro ao enviar a mensagem. Tente novamente.";
-      status.style.color = "red";
-      btn.disabled = false;
-      btn.innerText = "Enviar Mensagem";
-      console.error(error);
-    });
-});
+      Toastify({
+        text: "Erro ao enviar e-mail",
+        duration: 3000,
+        style: {
+          background: "#dc3545",
+          color: "#f4f4f4"
+        }
+        }).showToast();
+
+    })
+    .finally(() => {
+      submitButton.textContent = "Enviar mensagem";
+      submitButton.disable = false;
+    })
+
+
+
+})

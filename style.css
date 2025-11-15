@@ -699,3 +699,61 @@ html {
   height: auto;      /* mantém a proporção da imagem */
   object-fit: contain; /* garante que não seja cortada ou deformada */
 }
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.info-card {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    text-decoration: none; /* remove sublinhado */
+    color: inherit;        /* mantém cor do texto normal */
+    transition: 0.3s;
+}
+
+.info-card:hover {
+    opacity: 0.9;
+}
+
+.icon-box {
+    padding: 12px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-box i {
+    width: 26px;
+    height: 26px;
+    color: #102040;
+}
+
+.blue {
+    background: #6896BE22; /* mesma cor que já estava */
+}
+
+
+/* GRID da seção de contatos */
+.grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr; /* desktop: formulário maior, infos menores */
+  gap: 40px;
+}
+
+/* Responsivo */
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr; /* mobile: tudo em uma coluna */
+    gap: 25px;
+  }
+
+  .form-card,
+  .info-card {
+    padding: 24px; /* ajusta o padding no mobile */
+  }
+}
