@@ -375,27 +375,14 @@
 <!-- ============================================================
      SCRIPT DO FORMULÁRIO DE CONTATO
 ============================================================== -->
-<script>
-  lucide.createIcons();
-
-  const form = document.getElementById("contactForm");
-
-  form.addEventListener("submit", function (e) {
-    e.preventDefault();
-
-    const btn = form.querySelector(".btn");
-    btn.disabled = true;
-    btn.innerHTML = "Enviando...";
-
-    setTimeout(() => {
-      alert("Mensagem enviada com sucesso!");
-      form.reset();
-      btn.disabled = false;
-      btn.innerHTML = `Enviar Mensagem <i data-lucide="send"></i>`;
-      lucide.createIcons();
-    }, 1000);
-  });
+<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script type="text/javascript">
+  (function(){
+    emailjs.init("service_1kk64ud"); // seu User ID do EmailJS
+  })();
 </script>
+
+
 
 </main>
 
