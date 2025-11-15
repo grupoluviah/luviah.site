@@ -1,3 +1,25 @@
+html, body {
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+
 body {
     font-family: 'Montserrat', sans-serif;
 }
@@ -699,6 +721,7 @@ html {
   height: auto;      /* mantém a proporção da imagem */
   object-fit: contain; /* garante que não seja cortada ou deformada */
 }
+
 
 a {
   text-decoration: none;
