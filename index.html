@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Luviah Soluções Empresariais</title>
+
+    <!-- ============================
+         FONTE CORPORATIVA
+    =============================== -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- ============================
+         ARQUIVO DE ESTILOS
+    =============================== -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ============================================================
+     HEADER FIXO
+============================================================== -->
+<header class="header-fixo">
+    <div class="header-container">
+
+        <!-- Logo -->
+        <img src="logo.png" alt="Logo" class="header-logo">
+
+        <!-- Navegação -->
+        <nav class="header-nav">
+            <a href="#services">Serviços</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#about">Sobre</a>
+            <a href="#contact" class="btn-contato">Contato</a>
+        </nav>
+
+    </div>
+</header>
+
+<main>
+
+<!-- ============================================================
+     HERO / APRESENTAÇÃO
+============================================================== -->
+<section id="hero" class="hero-section">
+
+    <!-- Elementos visuais "blobs" -->
+    <div class="hero-bg">
+        <div class="blob blob1"></div>
+        <div class="blob blob2"></div>
+        <div class="blob blob3"></div>
+    </div>
+
+    <div class="hero-content">
+
+        <!-- Badge superior -->
+        <div class="hero-badge">
+            <img src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/691744e043a12ec5b00fb901/022ff8a5a_SymbolStandart4x.png" alt="Luviah"/>
+            <span>Luviah Soluções Empresariais</span>
+        </div>
+
+        <!-- Título principal -->
+        <h1>
+            <span class="gradient-text">Transformamos</span><br />
+            <span class="title-dark">Suas Ideias em Projetos</span>
+        </h1>
+
+        <!-- Subtítulo -->
+        <p class="hero-subtext">
+            Consultoria especializada, mentoria profissional e soluções criativas
+            para desenvolver novos negócios ou melhorar os existentes.
+        </p>
+
+        <!-- Botões -->
+        <div class="hero-buttons">
+            <button class="btn-azul" onclick="scrollToContact()">Começar Projeto</button>
+            <button class="btn-branco" onclick="scrollToServices()">Nossos Serviços</button>
+        </div>
+
+        <!-- Estatísticas -->
+        <div class="hero-stats">
+            <div class="stat-box">
+                <div class="stat-number">40+</div>
+                <div class="stat-label">Serviços oferecidos pelo Grupo Luviah</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-number">80%</div>
+                <div class="stat-label">De processos automatizados</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-number">50+</div>
+                <div class="stat-label">Metodologias e frameworks profissionais</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-number">26+</div>
+                <div class="stat-label">Ferramentas profissionais utilizadas</div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Script principal -->
+<script src="script.js"></script>
+
+<!-- ============================================================
+     SEÇÃO DE SERVIÇOS
+============================================================== -->
+<section id="services" class="services-section">
+    <div class="container">
+
+        <div class="services-header">
+            <h2>Nossos <span>Serviços</span></h2>
+            <p>Soluções completas e integradas para transformar sua empresa</p>
+        </div>
+
+        <div class="services-grid">
+
+            <!-- Serviço 01 -->
+            <div class="service-card">
+                <div class="service-icon">
+                    <!-- Ícone: Briefcase -->
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="28" height="28"
+                        fill="none" stroke="currentColor" stroke-width="2">
+                        <rect width="20" height="14" x="2" y="7" rx="2" ry="2"/>
+                        <path d="M16 3h-8a2 2 0 0 0-2 2v2h12V5a2 2 0 0 0-2-2z"/>
+                    </svg>
+                </div>
+                <h3>Consultoria e Auditoria</h3>
+                <p>
+                    Serviços especializados em gestão, finanças, logística, tecnologia e marketing
+                    para otimizar seus processos e resultados empresariais.
+                </p>
+            </div>
+
+            <!-- Serviço 02 -->
+            <div class="service-card">
+                <div class="service-icon">
+                    <!-- Ícone: Graduation Cap -->
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="28" height="28"
+                        fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 10L12 15L2 10L12 5L22 10Z"/>
+                        <path d="M6 12V16C6 16 8 18 12 18C16 18 18 16 18 16V12"/>
+                    </svg>
+                </div>
+                <h3>Mentoria e Treinamento</h3>
+                <p>
+                    Programas de ensino e capacitação em marketing, publicidade e música para desenvolver talentos.
+                </p>
+            </div>
+
+            <!-- Serviço 03 -->
+            <div class="service-card">
+                <div class="service-icon">
+                    <!-- Ícone: Palette -->
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="28" height="28"
+                        fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"/>
+                        <circle cx="14.5" cy="9.5" r="1"/>
+                        <circle cx="9" cy="9" r="1"/>
+                        <circle cx="8.5" cy="14.5" r="1"/>
+                        <circle cx="15" cy="15" r="1"/>
+                    </svg>
+                </div>
+                <h3>Identidade Visual e Publicidade</h3>
+                <p>
+                    Criação de marcas impactantes, design gráfico e campanhas publicitárias que comunicam sua essência.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================================
+     SEÇÃO SOBRE / ABOUT
+============================================================== -->
+<section id="about" class="about-section">
+    <div class="container">
+
+        <div class="about-grid">
+
+            <!-- Texto principal -->
+            <div class="about-text">
+                <h2>Quem <span>Somos</span></h2>
+
+                <p>
+                    Somos a <strong>Luviah Soluções Empresariais</strong>, uma empresa com o objetivo de transformar suas ideias em projetos e ajudar a desenvolver novos negócios ou melhorá-los.
+                </p>
+
+                <p>
+                    Oferecemos consultoria, auditoria, mentoria e criação, entregando soluções que realmente fazem diferença no seu negócio.
+                </p>
+
+                <!-- Tags -->
+                <div class="about-tags">
+                    <div class="tag">Consultoria</div>
+                    <div class="tag">Criatividade</div>
+                    <div class="tag">Inovação</div>
+                </div>
+            </div>
+
+            <!-- Valores -->
+            <div class="about-values">
+
+                <!-- Valor 1 -->
+                <div class="value-card">
+                    <div class="value-icon">
+                        <!-- Target -->
+                        <svg width="24" height="24" fill="none" stroke="#060f1f" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <circle cx="12" cy="12" r="6"/>
+                            <circle cx="12" cy="12" r="2"/>
+                        </svg>
+                    </div>
+                    <div class="value-content">
+                        <h3>Foco em Resultados</h3>
+                        <p>Transformamos ideias em projetos reais e resultados concretos.</p>
+                    </div>
+                </div>
+
+                <!-- Valor 2 -->
+                <div class="value-card">
+                    <div class="value-icon">
+                        <!-- Users -->
+                        <svg width="24" height="24" fill="none" stroke="#060f1f" stroke-width="2">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                            <circle cx="9" cy="7" r="4"/>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                        </svg>
+                    </div>
+                    <div class="value-content">
+                        <h3>Equipe Multidisciplinar</h3>
+                        <p>Profissionais especializados trabalhando juntos por um objetivo.</p>
+                    </div>
+                </div>
+
+                <!-- Valor 3 -->
+                <div class="value-card">
+                    <div class="value-icon">
+                        <!-- Zap -->
+                        <svg width="24" height="24" fill="none" stroke="#060f1f" stroke-width="2">
+                            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+                        </svg>
+                    </div>
+                    <div class="value-content">
+                        <h3>Inovação</h3>
+                        <p>Soluções criativas para desenvolver e melhorar negócios.</p>
+                    </div>
+                </div>
+
+                <!-- Valor 4 -->
+                <div class="value-card">
+                    <div class="value-icon">
+                        <!-- Award -->
+                        <svg width="24" height="24" fill="none" stroke="#060f1f" stroke-width="2">
+                            <circle cx="12" cy="8" r="7"/>
+                            <path d="M8.21 13.89l-1.69 7.47 5.48-3.14 5.48 3.14-1.69-7.47"/>
+                            <path d="M12 15v6"/>
+                        </svg>
+                    </div>
+                    <div class="value-content">
+                        <h3>Excelência</h3>
+                        <p>Compromisso real com qualidade e atenção aos detalhes.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- Lucide Icons -->
+<script src="https://unpkg.com/lucide@latest"></script>
+
+<!-- Fonte novamente carregada (pode remover uma das chamadas) -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- ============================================================
+     SEÇÃO DE CONTATO
+============================================================== -->
+<section id="contact" class="contact-section">
+  <div class="container">
+
+    <!-- Título -->
+    <div class="text-center">
+      <h2 class="title">Vamos <span>Conversar</span></h2>
+      <p class="subtitle">Conte-nos sobre seu projeto e descubra como podemos ajudar</p>
+    </div>
+
+    <div class="grid">
+
+      <!-- FORMULÁRIO -->
+      <div class="form-card">
+
+        <form id="contactForm">
+
+          <!-- Nome e Email -->
+          <div class="form-grid">
+            <div class="field">
+              <label>Nome</label>
+              <input type="text" id="name" placeholder="Seu nome" required>
+            </div>
+
+            <div class="field">
+              <label>Email</label>
+              <input type="email" id="email" placeholder="seu@email.com"
+               required>
+            </div>
+          </div>
+
+          <!-- Telefone -->
+          <div class="field">
+            <label>Telefone</label>
+            <input type="text" id="phone" placeholder="(94) 99999-9999">
+          </div>
+
+          <!-- Mensagem -->
+          <div class="field">
+            <label>Mensagem</label>
+            <textarea id="message" rows="6" placeholder="Conte-nos sobre seu projeto..." required></textarea>
+          </div>
+
+          <!-- Botão -->
+          <button type="submit" class="btn">
+            Enviar Mensagem
+            <i data-lucide="send"></i>
+          </button>
+
+        </form>
+
+      </div>
+
+      <!-- COLUNA DE INFORMAÇÕES -->
+      <div class="info-column">
+
+        <!-- Email -->
+        <div class="info-card">
+          <div class="icon-box blue"><i data-lucide="mail"></i></div>
+          <div>
+            <h3>Email</h3>
+            <p>contato@grupoluviah.com</p>
+          </div>
+        </div>
+
+        <!-- Telefone -->
+        <div class="info-card">
+          <div class="icon-box dark"><i data-lucide="phone"></i></div>
+          <div>
+            <h3>Telefone</h3>
+            <p>+55 (94) 99254-0402</p>
+          </div>
+        </div>
+
+        <!-- Localização -->
+        <div class="info-card">
+          <div class="icon-box blue"><i data-lucide="map-pin"></i></div>
+          <div>
+            <h3>Localização</h3>
+            <p>
+              Rua Rio Claro, 204b<br>
+              Beira Rio, Parauapebas - PA<br>
+              CEP: 68515-000
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SCRIPT DO FORMULÁRIO DE CONTATO
+============================================================== -->
+<script>
+  lucide.createIcons();
+
+  const form = document.getElementById("contactForm");
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const btn = form.querySelector(".btn");
+    btn.disabled = true;
+    btn.innerHTML = "Enviando...";
+
+    setTimeout(() => {
+      alert("Mensagem enviada com sucesso!");
+      form.reset();
+      btn.disabled = false;
+      btn.innerHTML = `Enviar Mensagem <i data-lucide="send"></i>`;
+      lucide.createIcons();
+    }, 1000);
+  });
+</script>
+
+</main>
+
+<!-- ============================================================
+     FOOTER
+============================================================== -->
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <!-- Coluna 1 -->
+        <div class="footer-col">
+            <img src="logo-footer.png" class="footer-logo" alt="">
+            <p>Soluções empresariais para transformar suas ideias em projetos de sucesso.</p>
+        </div>
+
+        <!-- Coluna 2 -->
+        <div class="footer-col">
+            <h3>Serviços</h3>
+            <p>Consultoria e Auditoria</p>
+            <p>Mentoria e Treinamento</p>
+            <p>Identidade Visual</p>
+            <p>Produção Musical</p>
+        </div>
+
+        <!-- Coluna 3 -->
+        <div class="footer-col">
+            <h3>Contato</h3>
+            <p>contato@grupoluviah.com</p>
+            <p>+55 (94) 99254-0402</p>
+            <p>
+                Rua Rio Claro, 204b, Beira Rio<br>
+                Parauapebas - PA, 68515-000
+            </p>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        © 2024 Luviah Soluções Empresariais. Todos os direitos reservados.
+    </div>
+
+</footer>
+
+</body>
+</html>
