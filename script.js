@@ -6,53 +6,50 @@ function scrollToServices() {
   document.getElementById("services").scrollIntoView({ behavior: "smooth" });
 }
 
+
+const form = document.getElementById("contactForm");
+const status = document.createElement("p");
+status.style.textAlign = "center";
+status.style.marginTop = "10px";
+form.appendChild(status);
+
 form.addEventListener("submit", function(e) {
   e.preventDefault();
 
-  const btn = form.querySelector(".btn");
+  // Validação básica
+  if (!form.from_name.value || !form.from_email.value || !form.message.value) {
+    status.textContent = "Por favor, preencha todos os campos.";
+    status.style.color = "red";
+    return;
+  }
+
+  const btn = form.querySelector("button");
   btn.disabled = true;
-  btn.innerHTML = "Enviando...";
+  btn.innerText = "Enviando...";
 
-  emailjs.sendForm('service_1kk64ud', 'template_ckm1j2w', this)
-    .then(() => {
-      alert("Mensagem enviada com sucesso!");
-      form.reset();
-    }, (err) => {
-      alert("Erro ao enviar, tente novamente.");
-      console.error(err);
-    })
-    .finally(() => {
-      btn.disabled = false;
-      btn.innerHTML = `Enviar Mensagem <i data-lucide="send"></i>`;
-      lucide.createIcons();
-    });
-});
+  const serviceID = "service_1kk64ud";
+  const templateID = "template_ckm1j2w";
+  const apiKey = "c6Cvcehu-lsPl-1yLPown";
 
-form.addEventListener("submit", function (e) {
-  e.preventDefault();
-
-  const btn = form.querySelector(".btn");
-  btn.disabled = true;
-  btn.innerHTML = "Enviando...";
-
-  const templateParams = {
-    name: document.getElementById("name").value,
-    email: document.getElementById("email").value,
-    phone: document.getElementById("phone").value,
-    message: document.getElementById("message").value
+  const formData = {
+    from_name: form.from_name.value,
+    from_email: form.from_email.value,
+    message: form.message.value
   };
 
-  emailjs.send("service_1kk64ud", "template_ckm1j2w", templateParams)
+  emailjs.send(serviceID, templateID, formData, apiKey)
     .then(() => {
-      alert("Mensagem enviada com sucesso!");
+      status.textContent = "Mensagem enviada com sucesso!";
+      status.style.color = "green";
       form.reset();
       btn.disabled = false;
-      btn.innerHTML = `Enviar Mensagem <i data-lucide="send"></i>`;
-      lucide.createIcons();
-    }, (error) => {
-      alert("Erro ao enviar mensagem: " + JSON.stringify(error));
+      btn.innerText = "Enviar Mensagem";
+    })
+    .catch((error) => {
+      status.textContent = "Erro ao enviar a mensagem. Tente novamente.";
+      status.style.color = "red";
       btn.disabled = false;
-      btn.innerHTML = `Enviar Mensagem <i data-lucide="send"></i>`;
+      btn.innerText = "Enviar Mensagem";
+      console.error(error);
     });
 });
-

@@ -320,7 +320,7 @@
           <!-- Mensagem -->
           <div class="field">
             <label>Mensagem</label>
-            <textarea id="message" rows="6" placeholder="Conte-nos sobre seu projeto..." required></textarea>
+            <textarea id="message" rows="6" placeholder="Sua mensagem..." required></textarea>
           </div>
 
           <!-- Botão -->
@@ -375,12 +375,41 @@
 <!-- ============================================================
      SCRIPT DO FORMULÁRIO DE CONTATO
 ============================================================== -->
-<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
-<script type="text/javascript">
-  (function(){
-    emailjs.init("service_1kk64ud"); // seu User ID do EmailJS
-  })();
-</script>
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script>
+    const form = document.getElementById("contactForm");
+
+    form.addEventListener("submit", function(e) {
+      e.preventDefault();
+
+      const btn = form.querySelector("button");
+      btn.disabled = true;
+      btn.innerText = "Enviando...";
+
+      const serviceID = "service_1kk64ud";      // substitua pelo Service ID
+      const templateID = "template_ckm1j2w";    // substitua pelo Template ID
+      const apiKey = "c6Cvcehu-lsPl-1yLPown";            // substitua pela sua API Key
+
+      const formData = {
+        from_name: form.from_name.value,
+        from_email: form.from_email.value,
+        message: form.message.value
+      };
+
+      emailjs.send(serviceID, templateID, formData, apiKey)
+        .then(() => {
+          alert("Mensagem enviada com sucesso!");
+          form.reset();
+          btn.disabled = false;
+          btn.innerText = "Enviar Mensagem";
+        })
+        .catch((error) => {
+          alert("Erro ao enviar a mensagem: " + JSON.stringify(error));
+          btn.disabled = false;
+          btn.innerText = "Enviar Mensagem";
+        });
+    });
+  </script>
 
 
 
