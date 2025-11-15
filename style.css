@@ -1,5 +1,3 @@
-
-/* Fixar header e impedir quebra */
 .header-fixo {
     width: 100%;
     position: fixed;
@@ -8,128 +6,96 @@
     background: #fff;
     z-index: 999;
 }
-
-/* Container do header */
 .header-container {
-    max-width: 1200px;      /* impede que o conteúdo fique estreito */
+    max-width: 1200px;
     width: 100%;
     margin: 0 auto;
     padding: 12px 20px;
-
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: nowrap;      /* impede quebra */
+    flex-wrap: nowrap; 
 }
-
-/* Logo */
 .header-logo {
     height: 48px;
-    flex-shrink: 0;         /* impede a logo de ser esmagada */
-    margin-right: 10px;   /* diminui espaço lateral */
+    flex-shrink: 0;      
+    margin-right: 10px;  
 }
-
 }
-
-/* Navegação */
 .header-nav {
     display: flex;
     align-items: center;
     gap: 24px;
-    flex-shrink: 1;         /* permite que a nav se ajuste */
+    flex-shrink: 1;  
 }
-
-/* Links */
 .header-nav a {
     text-decoration: none;
     font-size: 16px;
-    white-space: nowrap;     /* impede quebra em cada link */
+    white-space: nowrap;
 }
-
-/* Botão Contato */
 .btn-contato {
     padding: 8px 16px;
     border-radius: 8px;
 }
-
-/* RESPONSIVIDADE */
 @media (max-width: 768px) {
     .header-container {
         padding: 10px 14px;
     }
-
     .header-logo {
         height: 38px;
     }
-
     .header-nav {
         gap: 14px;
     }
-
     .header-nav a {
         font-size: 14px;
     }
-
     .btn-contato:hover {
-        background: none !important;     /* sem fundo */
-        color: #000c24 !important;       /* azul */
-        font-weight: 700;                /* negrito */
-        padding: 6px 10px !important;    /* padding menor e elegante */
-        border: 10px solid transparent;   /* mantém posição sem encolher */
+        background: none !important;   
+        color: #000c24 !important;     
+        font-weight: 700;               
+        padding: 6px 10px !important;  
+        border: 10px solid transparent; 
     }
-
 }
-
-
-
 html, body {
   overflow-x: hidden;
 }
-
 * {
   box-sizing: border-box;
 }
-
 header {
   width: 100%;
   max-width: 100%;
   overflow: hidden;
 }
-
 .container {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 16px;
 }
-
-
 body {
     font-family: 'Montserrat', sans-serif;
 }
-
 h1 {
   line-height: 1.0;
 }
-
 .services-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 32px;
 }
-
 .service-card {
     text-align: center;
     padding: 24px;
     border-radius: 16px;
     transition: transform 0.3s, box-shadow 0.3s;
 }
-
 .service-card:hover {
     transform: translateY(-6px);
     box-shadow: 0 10px 25px rgba(0,0,0,0.1);
 }
-
 .service-icon {
     background-color: #dce4f0; /* azul pastel puxando pro cinza */
     width: 70px;
@@ -141,21 +107,15 @@ h1 {
     margin: 0 auto 16px auto; /* centraliza e espaça do título */
     transition: transform 0.3s, background-color 0.3s;
 }
-
 .service-card:hover .service-icon {
     transform: scale(1.1);
     background-color: #c9d4e3; /* leve escurecimento no hover */
 }
-
 .service-icon .icon {
     stroke: #060f1f; /* cor do ícone */
     width: 28px;
     height: 28px;
 }
-
-
-/* ===== HERO SECTION ===== */
-
 .hero-section {
   position: relative;
   min-height: 100vh;
@@ -166,7 +126,6 @@ h1 {
   overflow: hidden;
   background: white;
 }
-
 .hero-bg {
   position: absolute;
   inset: 0;
@@ -176,7 +135,6 @@ h1 {
     rgba(16,32,64,0.05)
   );
 }
-
 .blob {
   position: absolute;
   width: 280px;
@@ -190,14 +148,11 @@ h1 {
 .blob1 { top: 80px; left: 60px; background: #6896BE; }
 .blob2 { top: 200px; right: 60px; background: #102040; animation-delay: 2s; }
 .blob3 { bottom: 120px; left: 50%; background: #6896BE; animation-delay: 4s; }
-
 @keyframes blob {
   0%, 100% { transform: translate(0,0) scale(1); }
   33% { transform: translate(30px,-50px) scale(1.1); }
   66% { transform: translate(-20px,20px) scale(0.9); }
 }
-
-/* Conteúdo */
 .hero-content {
   position: relative;
   text-align: center;
@@ -205,7 +160,6 @@ h1 {
   max-width: 1000px;
   z-index: 10;
 }
-
 .hero-badge {
   display: inline-flex;
   align-items: center;
@@ -218,29 +172,24 @@ h1 {
   backdrop-filter: blur(5px);
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
-
 .hero-badge img {
   height: 25px;
 }
-
 .gradient-text {
   background: linear-gradient(to right, #102040, #6896BE, #102040);
   -webkit-background-clip: text;
   color: transparent;
   font-weight: bold;
 }
-
 .gradient-secondary {
   background: linear-gradient(90deg, #102040, #1c335c); /* azul escuro */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 600;
 }
-
 .title-dark {
   color: #060f1f;
 }
-
 .hero-subtext {
   font-size: 1.3rem;
   color: #555;
@@ -248,8 +197,6 @@ h1 {
   max-width: 650px;
   line-height: 1.6;
 }
-
-/* Botões */
 .btn-azul {
   padding: 15px 40px;
   background: #102040;
@@ -263,7 +210,6 @@ h1 {
 .btn-azul:hover {
   background: #6896BE;
 }
-
 .btn-branco {
   padding: 15px 40px;
   background: white;
@@ -278,22 +224,18 @@ h1 {
   background: #102040;
   color: white;
 }
-
 .hero-buttons {
   display: flex;
   gap: 30px; /* ajuste aqui o espaço entre os botões */
   justify-content: center;
   margin-top: 25px; /* opcional, só para dar respiro */
 }
-
-/* Stats */
 .hero-stats {
   margin-top: 60px;
   display: grid;
   gap: 20px;
   grid-template-columns: repeat(2,1fr);
 }
-
 .stat-box {
   background: rgba(255,255,255,0.8);
   padding: 25px;
@@ -302,7 +244,6 @@ h1 {
   backdrop-filter: blur(6px);
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
-
 .stat-number {
   font-size: 2.2rem;
   font-weight: bold;
@@ -310,13 +251,10 @@ h1 {
   -webkit-background-clip: text;
   color: transparent;
 }
-
 .stat-label {
   color: #666;
   font-size: 0.9rem;
 }
-
-/* Responsividade */
 @media (min-width: 768px) {
   .hero-stats {
     grid-template-columns: repeat(4,1fr);
@@ -325,42 +263,32 @@ h1 {
     font-size: 3.5rem;
   }
 }
-
-/* Sessão Serviços */
 .services-section {
   padding: 100px 20px;
 }
-
 .services-header {
   text-align: center;
   margin-bottom: 60px;
 }
-
 .services-header h2 {
   font-size: 2.8rem;
   font-weight: 700;
   margin-bottom: 10px;
 }
-
 .services-header h2 span {
   background: linear-gradient(to right, #102040, #6896BE);
   -webkit-background-clip: text;
   color: transparent;
 }
-
 .services-header p {
   font-size: 1.2rem;
   color: #555;
 }
-
-/* GRID */
 .services-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
   gap: 30px;
 }
-
-/* CARDS */
 .service-card {
   background: white;
   border-radius: 20px;
@@ -368,13 +296,10 @@ h1 {
   box-shadow: 0px 8px 20px rgba(0,0,0,0.07);
   transition: .3s;
 }
-
 .service-card:hover {
   transform: translateY(-6px);
   box-shadow: 0px 12px 26px rgba(0,0,0,0.12);
 }
-
-/* ÍCONES */
 .service-icon {
   width: 70px;
   height: 70px;
@@ -386,60 +311,44 @@ h1 {
   margin-bottom: 20px;
   transition: .3s;
 }
-
 .bg1 {
   background: rgba(104,150,190,0.12);
 }
-
 .bg2 {
   background: rgba(16,32,64,0.12);
 }
-
 .service-card:hover .service-icon {
   transform: scale(1.1);
 }
-
-/* Títulos */
 .service-card h3 {
   font-size: 1.6rem;
   margin-bottom: 15px;
   color: #102040;
   transition: .3s;
 }
-
 .service-card:hover h3 {
   background: linear-gradient(to right, #102040, #6896BE);
   -webkit-background-clip: text;
   color: transparent;
 }
-
-/* Texto */
 .service-card p {
   color: #555;
   line-height: 1.6;
 }
-
-/* Fonte Montserrat */
 body, h2, h3, p {
   font-family: 'Montserrat', sans-serif;
 }
-
-/* Container */
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 24px;
 }
-
-/* Grid */
 .about-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 40px;
   align-items: start;
 }
-
-/* Text Section */
 .about-text h2 {
   font-size: 2.5rem;
   font-weight: bold;
@@ -465,13 +374,11 @@ body, h2, h3, p {
 .tag {
   padding: 8px 16px;
   border-radius: 9999px;
-  background-color: #f0f7fa; /* azul pastel bem claro */
+  background-color: #f0f7fa; 
   border: 1px solid #d1e2eb;
   color: #102040;
   font-weight: 600;
 }
-
-/* Values Section */
 .about-values {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -512,8 +419,6 @@ body, h2, h3, p {
   color: #4b5563;
   line-height: 1.4;
 }
-
-/* Responsivo */
 @media (max-width: 1024px) {
   .about-grid {
     grid-template-columns: 1fr;
@@ -527,51 +432,41 @@ body, h2, h3, p {
     grid-template-columns: 1fr;
   }
 }
-
 * {
   font-family: "Montserrat", sans-serif;
 }
-
 .contact-section {
   padding: 90px 20px;
   background: white;
 }
-
 .container {
   max-width: 1250px;
   margin: auto;
 }
-
 .text-center {
   text-align: center;
   margin-bottom: 60px;
 }
-
 .title {
   font-size: 45px;
   font-weight: 700;
 }
-
 .title span {
   background: linear-gradient(to right, #102040, #6896BE);
   -webkit-background-clip: text;
   color: transparent;
 }
-
 .subtitle {
   font-size: 20px;
   color: #666;
   max-width: 600px;
   margin: 0 auto;
 }
-
-/* GRID */
 .grid {
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: 40px;
 }
-
 .form-card,
 .info-card {
   background: white;
@@ -579,25 +474,20 @@ body, h2, h3, p {
   box-shadow: 0 4px 25px rgba(0, 0, 0, 0.07);
   padding: 32px;
 }
-
-/* FORM */
 .form-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
 }
-
 .field {
   display: flex;
   flex-direction: column;
 }
-
 .field label {
   font-size: 14px;
   margin-bottom: 6px;
   font-weight: 500;
 }
-
 input,
 textarea {
   border: 1px solid #ddd;
@@ -605,11 +495,9 @@ textarea {
   padding: 12px 14px;
   font-size: 15px;
 }
-
 textarea {
   resize: none;
 }
-
 .btn {
   width: 100%;
   padding: 14px;
@@ -626,93 +514,75 @@ textarea {
   gap: 8px;
   transition: 0.2s;
 }
-
 .btn:hover {
   background: #6896BE;
 }
-
-/* RIGHT COLUMN */
 .info-column {
   display: flex;
   flex-direction: column;
   gap: 25px;
 }
-
 .info-card {
   display: flex;
   align-items: flex-start;
   gap: 18px;
 }
-
 .icon-box {
   padding: 12px;
   border-radius: 12px;
 }
-
 .icon-box i {
   width: 26px;
   height: 26px;
   color: #102040;
 }
-
 .blue {
   background: #6896BE22;
 }
-
 .dark {
   background: #10204022;
 }
-
 .info-card h3 {
   font-size: 17px;
   font-weight: 600;
   margin-bottom: 4px;
 }
-
 .info-card p {
   color: #666;
   line-height: 1.4;
 }
-
-/* RESPONSIVE */
 @media (max-width: 900px) {
   .grid {
     grid-template-columns: 1fr;
   }
 }
-/* Espaçamento entre os campos */
 .field {
   display: flex;
   flex-direction: column;
-  margin-bottom: 22px; /* espaçamento entre os inputs */
+  margin-bottom: 22px; 
 }
 .field label {
-  font-weight: 600; /* semibold — igual ao da imagem */
-  margin-bottom: 8px; /* espaço entre o título e o input */
+  font-weight: 600; 
+  margin-bottom: 8px;
   font-family: 'Montserrat', sans-serif; 
 }
-
 .header {
     width: 100%;
     padding: 20px 0;
     background: white;
     font-family: 'Montserrat', sans-serif;
 }
-
 .header-container {
     max-width: 1280px;
     margin: 0 auto;
     padding: 0 20px;
-
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-
 .header-logo {
     height: 40px;
 }
-
 .header-nav a {
     margin-left: 32px;
     font-size: 1rem;
@@ -721,11 +591,9 @@ textarea {
     text-decoration: none;
     transition: 0.3s ease;
 }
-
 .header-nav a:hover {
     opacity: 0.7;
 }
-
 .btn-contato {
     background: #102040;
     color: white !important;
@@ -733,57 +601,46 @@ textarea {
     border-radius: 10px;
     font-weight: 600;
 }
-
 @media (max-width: 768px) {
   .form-grid {
-    grid-template-columns: 1fr; /* Agora cada campo ocupa 100% da tela */
+    grid-template-columns: 1fr; 
   }
 }
-
-
 html {
   scroll-behavior: smooth;
 }
-
 .footer {
     background: #0F2342;
     color: white;
     font-family: 'Montserrat', sans-serif;
     padding: 60px 0 30px;
 }
-
 .footer-container {
     max-width: 1280px;
     margin: 0 auto;
     padding: 0 20px;
-
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 40px;
 }
-
 .footer-col {
     display: flex;
     flex-direction: column;
 }
-
 .footer-logo {
     height: 50px;
     margin-bottom: 16px;
 }
-
 .footer-col h3 {
     font-size: 18px;
     font-weight: 700;
     margin-bottom: 16px;
 }
-
 .footer-col p {
     font-size: 15px;
     opacity: 0.9;
     margin-bottom: 8px;
 }
-
 .footer-bottom {
     margin-top: 40px;
     text-align: center;
@@ -792,47 +649,39 @@ html {
     border-top: 1px solid rgba(255,255,255,0.1);
     padding-top: 20px;
 }
-
 .header-fixo {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 1000; /* fica acima de tudo */
-  background: white; /* cor de fundo obrigatória para não ficar transparente */
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* opcional */
+  z-index: 1000; 
+  background: white; 
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
 }
-
 .header-fixo {
-  padding: 20px 40px; /* aumenta a altura suavemente */
+  padding: 20px 40px; 
 }
-
 .footer-logo {
-  width: 70px;      /* define uma largura máxima */
-  height: auto;      /* mantém a proporção da imagem */
-  object-fit: contain; /* garante que não seja cortada ou deformada */
+  width: 70px;   
+  height: auto;     
+  object-fit: contain; 
 }
-
-
 a {
   text-decoration: none;
   color: inherit;
   cursor: pointer;
 }
-
 .info-card {
     display: flex;
     align-items: center;
     gap: 18px;
-    text-decoration: none; /* remove sublinhado */
-    color: inherit;        /* mantém cor do texto normal */
+    text-decoration: none; 
+    color: inherit;    
     transition: 0.3s;
 }
-
 .info-card:hover {
     opacity: 0.9;
 }
-
 .icon-box {
     padding: 12px;
     border-radius: 12px;
@@ -840,80 +689,61 @@ a {
     align-items: center;
     justify-content: center;
 }
-
 .icon-box i {
     width: 26px;
     height: 26px;
     color: #102040;
 }
-
 .blue {
-    background: #6896BE22; /* mesma cor que já estava */
+    background: #6896BE22;
 }
-
-
-/* GRID da seção de contatos */
 .grid {
   display: grid;
-  grid-template-columns: 2fr 1fr; /* desktop: formulário maior, infos menores */
+  grid-template-columns: 2fr 1fr; 
   gap: 40px;
 }
-
-/* Responsivo */
 @media (max-width: 900px) {
   .grid {
-    grid-template-columns: 1fr; /* mobile: tudo em uma coluna */
+    grid-template-columns: 1fr;
     gap: 25px;
   }
-
   .form-card,
   .info-card {
-    padding: 24px; /* ajusta o padding no mobile */
+    padding: 24px; 
   }
 }
-
-/* ====== FOOTER ====== */
-
 .footer {
     background: #102040;
     color: #fff;
-    padding: 32px 16px; /* diminuído */
-    font-size: 14px; /* textos menores */
+    padding: 32px 16px; 
+    font-size: 14px;
 }
-
 .footer-container {
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    gap: 32px;        /* mais compacto */
-    flex-wrap: wrap;  /* responsivo */
+    gap: 32px;       
+    flex-wrap: wrap; 
 }
-
 .footer-col {
     flex: 1;
     min-width: 180px; 
 }
-
 .footer-col h3 {
     margin-bottom: 8px;
     font-size: 15px;
     font-weight: 600;
 }
-
 .footer-col p {
-    margin: 4px 0; /* menos espaço */
+    margin: 4px 0; 
     line-height: 1.3; 
 }
-
-/* Logo menor e sem esticar */
 .footer-logo {
-    width: 60px;     /* reduzido */
+    width: 60px;    
     height: auto;
     margin-bottom: 8px;
 }
-
-/* Parte de baixo */
 .footer-bottom {
     text-align: center;
     margin-top: 24px;
@@ -922,22 +752,17 @@ a {
     font-size: 13px;
     opacity: 0.7;
 }
-
-/* ====== RESPONSIVO ====== */
 @media (max-width: 600px) {
     .footer-container {
         flex-direction: column;
         text-align: center;
-        gap: 20px; /* menos espaço ainda */
+        gap: 20px; 
     }
-
     .footer-logo {
         margin: 0 auto 8px;
-        width: 90px;  /* ainda menor no celular */
+        width: 90px; 
     }
-
     .footer-col p {
         font-size: 13px;
     }
 }
-
