@@ -97,22 +97,22 @@ h1 {
     box-shadow: 0 10px 25px rgba(0,0,0,0.1);
 }
 .service-icon {
-    background-color: #dce4f0; /* azul pastel puxando pro cinza */
+    background-color: #dce4f0; 
     width: 70px;
     height: 70px;
-    border-radius: 24px; /* cantos bem arredondados */
+    border-radius: 24px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 auto 16px auto; /* centraliza e espaça do título */
+    margin: 0 auto 16px auto; 
     transition: transform 0.3s, background-color 0.3s;
 }
 .service-card:hover .service-icon {
     transform: scale(1.1);
-    background-color: #c9d4e3; /* leve escurecimento no hover */
+    background-color: #c9d4e3; 
 }
 .service-icon .icon {
-    stroke: #060f1f; /* cor do ícone */
+    stroke: #060f1f; 
     width: 28px;
     height: 28px;
 }
@@ -182,7 +182,7 @@ h1 {
   font-weight: bold;
 }
 .gradient-secondary {
-  background: linear-gradient(90deg, #102040, #1c335c); /* azul escuro */
+  background: linear-gradient(90deg, #102040, #1c335c); 
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 600;
@@ -226,9 +226,9 @@ h1 {
 }
 .hero-buttons {
   display: flex;
-  gap: 30px; /* ajuste aqui o espaço entre os botões */
+  gap: 30px; 
   justify-content: center;
-  margin-top: 25px; /* opcional, só para dar respiro */
+  margin-top: 25px; /
 }
 .hero-stats {
   margin-top: 60px;
@@ -401,7 +401,7 @@ body, h2, h3, p {
 .value-icon {
   width: 56px;
   height: 56px;
-  background-color: #e0f0f7; /* azul pastel bem claro */
+  background-color: #e0f0f7;
   border-radius: 16px;
   display: flex;
   align-items: center;
