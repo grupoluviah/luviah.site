@@ -765,4 +765,210 @@ a {
     .footer-col p {
         font-size: 13px;
     }
+}   
+
+/* ================================
+   PLANOS – CONSULTORIA & AUDITORIA
+=================================== */
+
+.planos-section {
+    width: 100%;
+    padding: 80px 20px;
+    background: #f9f9f9;
+    margin-top: 40px;
+}
+
+.planos-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.planos-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.planos-header h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #111;
+}
+
+.planos-header .lead {
+    font-size: 17px;
+    color: #444;
+}
+
+/* GRID DOS PLANOS */
+.planos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+/* CARD */
+
+.plano-card {
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 14px;
+    padding: 30px;
+    transition: all .3s ease;
+}
+
+.plano-card:hover {
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    transform: translateY(-4px);
+}
+
+.plano-title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 6px;
+    color: #111;
+}
+
+.plano-sub {
+    font-size: 15px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* ITENS */
+.plano-itens {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px;
+}
+
+.plano-itens li {
+    padding: 6px 0;
+    font-size: 15px;
+    color: #444;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.plano-itens li::before {
+    content: "•";
+    color: #111;
+    font-size: 20px;
+}
+
+/* ENTREGÁVEIS */
+.plano-entregaveis strong {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: #222;
+}
+
+.plano-entregaveis ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px;
+}
+
+.plano-entregaveis ul li {
+    padding: 4px 0;
+    font-size: 14px;
+    color: #555;
+}
+
+/* CTA */
+.plano-cta {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.plano-preco {
+    font-size: 17px;
+    font-weight: 600;
+    color: #111;
+}
+
+/* BOTÕES – adaptados ao estilo Luviah */
+
+.btn {
+    width: 100%;
+    padding: 12px 0;
+    border-radius: 10px;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+/* Primário (chamativo) */
+.btn-primary {
+    background: #111;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    opacity: 0.85;
+}
+
+/* Secundário */
+.btn-secondary {
+    background: #333;
+    color: #fff;
+}
+
+.btn-secondary:hover {
+    opacity: 0.85;
+}
+
+/* Outline */
+.btn-outline {
+    background: transparent;
+    border: 2px solid #111;
+    color: #111;
+}
+
+.btn-outline:hover {
+    background: #111;
+    color: #fff;
+}
+
+/* Rodapé */
+.planos-footer {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.planos-footer .nota {
+    font-size: 14px;
+    color: #555;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 600px) {
+    .planos-section {
+        padding: 60px 15px;
+    }
+    
+    .plano-card {
+        padding: 25px;
+    }
+
+    .planos-header h2 {
+        font-size: 28px;
+    }
+}
+
+.plano-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #111;
+    margin-bottom: 6px;
+}
+
+.plano-title span {
+    color: #1a3975
 }
