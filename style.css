@@ -1,5 +1,5 @@
 .header-fixo {
-    height: 80px;  
+    height: 80px;
     width: 100%;
     position: fixed;
     top: 0;
@@ -8,7 +8,6 @@
     z-index: 999;
 }
 .header-container {
-    height: 100%;
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
@@ -226,14 +225,11 @@ h1 {
   background: #102040;
   color: white;
 }
-
-
-
 .hero-buttons {
   display: flex;
   gap: 30px; 
   justify-content: center;
-  margin-top: 25px; 
+  margin-top: 25px; /
 }
 .hero-stats {
   margin-top: 60px;
@@ -770,10 +766,6 @@ a {
     .footer-col p {
         font-size: 13px;
     }
-    .header-fixo {
-    display: none;
-    
-    
 }   
 
 /* ================================
@@ -869,7 +861,6 @@ a {
 /* ENTREGÁVEIS */
 .plano-entregaveis strong {
     display: block;
-    margin-top: 12px;
     margin-bottom: 5px;
     font-size: 16px;
     color: #222;
@@ -956,10 +947,9 @@ a {
     color: #555;
 }
 
-
 /* RESPONSIVIDADE */
 
-@media (min-width: 100px) {
+@media (max-width: 600px) {
     .planos-section {
         padding: 60px 15px;
     }
@@ -970,6 +960,10 @@ a {
 
     .planos-header h2 {
         font-size: 28px;
+    }
+
+    .header-fixo{
+      display: none;
     }
 }
 
@@ -984,8 +978,9 @@ a {
     color: #1a3975
 }
 
-#about {
+#services,
+#portfolio,
+#about,
+#contact {
     scroll-margin-top: 120px;
-
-
-
+}
