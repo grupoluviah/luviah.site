@@ -957,3 +957,35 @@ a {
 }
 
 
+/* RESPONSIVIDADE */
+
+@media (min-width: 100px) {
+    .planos-section {
+        padding: 60px 15px;
+    }
+    
+    .plano-card {
+        padding: 25px;
+    }
+
+    .planos-header h2 {
+        font-size: 28px;
+    }
+}
+
+.plano-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #111;
+    margin-bottom: 6px;
+}
+
+.plano-title span {
+    color: #1a3975
+}
+
+#about {
+    scroll-margin-top: 120px;
+
+
+
