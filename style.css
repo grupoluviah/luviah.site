@@ -23,7 +23,7 @@
     flex-shrink: 0;      
     margin-right: 10px;  
 }
-}
+
 .header-nav {
     display: flex;
     align-items: center;
@@ -233,7 +233,7 @@ h1 {
   display: flex;
   gap: 30px; 
   justify-content: center;
-  margin-top: 25px; /
+  margin-top: 25px; 
 }
 .hero-stats {
   margin-top: 60px;
@@ -985,4 +985,5 @@ a {
 
 #about {
     scroll-margin-top: 120px;
+
 
