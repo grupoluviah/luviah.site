@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Luviah - Formulário Desenvolvimento Web</title>
+
+    <meta name="description" content="Formulário para iniciar projeto de Desenvolvimento Web com a Luviah." />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+<header class="header-fixo">
+    <div class="header-container">
+        <a href="index.html"><img src="logo.png" alt="Logo" class="header-logo"></a>
+    </div>
+</header>
+
+<main>
+<section id="contact" class="contact-section">
+  <div class="container">
+
+    <div class="text-center">
+      <h2 class="title">Desenvolvimento <span>Web</span></h2>
+      <p class="subtitle">Preencha o formulário para iniciarmos seu projeto digital.</p>
+    </div>
+
+    <div class="grid">
+      <div class="form-card">
+
+<form action="https://formsubmit.co/site@grupoluviah.com" method="post">
+
+<!-- ================= ETAPA 1 ================= -->
+<div class="form-step active">
+  <h3 class="form-step-title">Informações da Empresa</h3>
+  <p class="form-step-subtitle">Dados básicos para entendermos o seu negócio.</p>
+
+  <div class="form-grid">
+    <div class="field"><label>Razão Social  *</label><input type="text" name="razao_social" placeholder="Ex: Luviah Soluções Empresariais Ltda" required></div>
+    <div class="field"><label>Nome Fantasia</label><input type="text" name="nome_fantasia" placeholder="Ex: Grupo Luviah"></div>
+    <div class="field"><label>CNPJ  *</label><input type="text" name="cnpj" placeholder="00.000.000/0000-00" required></div>
+    <div class="field"><label>Segmento de Atuação</label><input type="text" name="segmento" placeholder="Ex: Consultoria, Comércio, Serviços"></div>
+    <div class="field"><label>Tempo de Mercado</label><input type="text" name="tempo_mercado" placeholder="Ex: 3 anos"></div>
+    <div class="field"><label>Contato do Responsável  *</label><input type="text" name="contato_responsavel" placeholder="Nome, telefone ou e-mail" required></div>
+  </div>
+
+  <button type="button" class="btn next">Continuar</button>
+</div>
+
+<!-- ================= ETAPA 2 ================= -->
+<div class="form-step">
+  <h3 class="form-step-title">Objetivos do Projeto</h3>
+  <p class="form-step-subtitle">Entenda a finalidade e expectativas para o seu site ou plataforma.</p>
+
+  <div class="field">
+    <label>Qual o principal objetivo do site?  *</label>
+    <textarea name="objetivo_site" placeholder="Ex: aumentar vendas, gerar leads, apresentar serviços" required></textarea>
+  </div>
+
+  <div class="field">
+    <label>Tipo de projeto  *</label>
+    <label><input type="radio" name="tipo_projeto" value="Landing Page" required> Landing Page</label>
+    <label><input type="radio" name="tipo_projeto" value="Site Institucional"> Site Institucional</label>
+    <label><input type="radio" name="tipo_projeto" value="E-commerce"> E-commerce</label>
+    <label><input type="radio" name="tipo_projeto" value="Sistema Web"> Sistema Web</label>
+  </div>
+
+  <div class="field">
+    <label>Plataformas e integrações desejadas</label>
+    <textarea name="plataformas" placeholder="Ex: WordPress, Shopify, ERP, APIs"></textarea>
+  </div>
+
+  <button type="button" class="btn prev btn-prev">Voltar</button>
+  <button type="button" class="btn next">Continuar</button>
+</div>
+
+<!-- ================= ETAPA 3 ================= -->
+<div class="form-step">
+  <h3 class="form-step-title">Design e Experiência</h3>
+  <p class="form-step-subtitle">Defina a identidade visual e a experiência do usuário do projeto.</p>
+
+  <div class="field">
+    <label>Referências visuais e sites que gosta</label>
+    <textarea name="referencias_visuais" placeholder="Ex: sites de concorrentes ou inspirações"></textarea>
+  </div>
+
+  <div class="field">
+    <label>Cores, fontes e elementos visuais</label>
+    <input type="text" name="cores_fontes" placeholder="Ex: tons pastéis, fontes sans-serif">
+  </div>
+
+  <div class="field">
+    <label>Funcionalidades principais desejadas</label>
+    <textarea name="funcionalidades" placeholder="Ex: blog, formulário, integração com ERP, carrinho de compras"></textarea>
+  </div>
+
+  <button type="button" class="btn prev btn-prev">Voltar</button>
+  <button type="button" class="btn next">Continuar</button>
+</div>
+
+<!-- ================= ETAPA 4 ================= -->
+<div class="form-step">
+  <h3 class="form-step-title">Entrega e Observações</h3>
+  <p class="form-step-subtitle">Detalhes finais e expectativas sobre o projeto.</p>
+
+  <div class="field">
+    <label>Prazo esperado  *</label>
+    <input type="text" name="prazo" placeholder="Ex: 30 dias" required>
+  </div>
+
+  <div class="field">
+    <label>Orçamento estimado</label>
+    <input type="text" name="orcamento" placeholder="Ex: R$ 5.000 - R$ 10.000">
+  </div>
+
+  <div class="field">
+    <label>Informações adicionais ou observações</label>
+    <textarea name="observacoes" placeholder="Detalhes importantes para o desenvolvimento"></textarea>
+  </div>
+
+  <p style="font-size:14px;color:#666;margin-top:10px;">
+    Este briefing terá caráter orientativo e estratégico, não substituindo serviços jurídicos ou contábeis.
+  </p>
+
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_next" value="https://grupoluviah.com/form-sucesso">
+
+  <button type="button" class="btn prev btn-prev">Voltar</button>
+  <button type="submit" class="btn">Enviar Briefing</button>
+</div>
+
+</form>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<script src="https://unpkg.com/lucide@latest"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<script src="script.js"></script>
+<script>
+    lucide.replace();
+</script>
+
+</body>
+</html>

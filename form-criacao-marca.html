@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Luviah - Formulário Criação de Marca</title>
+
+    <meta name="description" content="Formulário para iniciar projeto de Criação de Marca com a Luviah." />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+<header class="header-fixo">
+    <div class="header-container">
+        <a href="index.html"><img src="logo.png" alt="Logo" class="header-logo"></a>
+    </div>
+</header>
+
+<main>
+<section id="contact" class="contact-section">
+  <div class="container">
+
+    <div class="text-center">
+      <h2 class="title">Criação de <span>Marca</span></h2>
+      <p class="subtitle">Preencha o formulário para iniciarmos seu projeto de branding.</p>
+    </div>
+
+    <div class="grid">
+      <div class="form-card">
+
+<form action="https://formsubmit.co/site@grupoluviah.com" method="post">
+
+<!-- ================= ETAPA 1 ================= -->
+<div class="form-step active">
+  <h3 class="form-step-title">Informações da Empresa</h3>
+  <p class="form-step-subtitle">Dados básicos para entendermos seu negócio.</p>
+
+  <div class="form-grid">
+    <div class="field"><label>Razão Social  *</label><input type="text" name="razao_social" placeholder="Ex: Luviah Soluções Empresariais Ltda" required></div>
+    <div class="field"><label>Nome Fantasia</label><input type="text" name="nome_fantasia" placeholder="Ex: Grupo Luviah"></div>
+    <div class="field"><label>CPF / CNPJ  *</label><input type="text" name="cnpj" placeholder="00.000.000/0000-00" required></div>
+    <div class="field"><label>Segmento de Atuação</label><input type="text" name="segmento" placeholder="Ex: Consultoria, Comércio, Serviços"></div>
+    <div class="field"><label>Tempo de Mercado</label><input type="text" name="tempo_mercado" placeholder="Ex: 3 anos"></div>
+    <div class="field"><label>Contato do Responsável  *</label><input type="text" name="contato_responsavel" placeholder="Nome, telefone ou e-mail" required></div>
+  </div>
+
+  <button type="button" class="btn next">Continuar</button>
+</div>
+
+<!-- ================= ETAPA 2 ================= -->
+<div class="form-step">
+  <h3 class="form-step-title">Posicionamento da Marca</h3>
+  <p class="form-step-subtitle">Entenda-se o propósito e os objetivos da marca.</p>
+
+  <div class="field">
+    <label>Qual é a missão da empresa?  *</label>
+    <textarea name="missao" placeholder="Descreva a missão" required></textarea>
+  </div>
+
+  <div class="field">
+    <label>Quais valores a marca deseja transmitir?  *</label>
+    <textarea name="valores" placeholder="Ex: inovação, confiança, sustentabilidade" required></textarea>
+  </div>
+
+  <div class="field">
+    <label>Qual o público-alvo da marca?  *</label>
+    <textarea name="publico_alvo" placeholder="Ex: jovens empreendedores, empresas de médio porte" required></textarea>
+  </div>
+
+  <div class="field">
+    <label>Alguma inspiração ou referência de marca?</label>
+    <input type="text" name="referencias" placeholder="Ex: marcas do mesmo segmento ou estilo desejado">
+  </div>
+
+  <button type="button" class="btn prev btn-prev">Voltar</button>
+  <button type="button" class="btn next">Continuar</button>
+</div>
+
+<!-- ================= ETAPA 3 ================= -->
+<div class="form-step">
+  <h3 class="form-step-title">Elementos da Marca</h3>
+  <p class="form-step-subtitle">Definição de conceitos e elementos visuais.</p>
+
+  <div class="field">
+    <label>Nome da Marca  *</label>
+    <input type="text" name="nome_marca" placeholder="Nome da marca" required>
+  </div>
+
+  <div class="field">
+    <label>Slogan ou tagline</label>
+    <input type="text" name="slogan" placeholder="Frase curta que represente a marca">
+  </div>
+
+  <div class="field">
+    <label>Tom de comunicação  *</label>
+    <label><input type="radio" name="tom_comunicacao" value="Formal" required> Formal</label>
+    <label><input type="radio" name="tom_comunicacao" value="Informal"> Informal</label>
+    <label><input type="radio" name="tom_comunicacao" value="Inspirador"> Inspirador</label>
+    <label><input type="radio" name="tom_comunicacao" value="Divertido"> Divertido</label>
+  </div>
+
+  <div class="field">
+    <label>Cores ou estilos desejados</label>
+    <input type="text" name="cores_estilo" placeholder="Ex: Azul e branco, minimalista, moderno">
+  </div>
+
+  <button type="button" class="btn prev btn-prev">Voltar</button>
+  <button type="button" class="btn next">Continuar</button>
+</div>
+
+<!-- ================= ETAPA 4 ================= -->
+<div class="form-step">
+  <h3 class="form-step-title">Expectativas e Entregáveis</h3>
+  <p class="form-step-subtitle">Defina os objetivos e resultados esperados do projeto.</p>
+
+  <div class="field">
+    <label>Objetivos principais da marca  *</label>
+    <textarea name="objetivos" placeholder="Ex: Reconhecimento de marca, fidelização de clientes" required></textarea>
+  </div>
+
+  <div class="field">
+    <label>Observações ou informações adicionais</label>
+    <textarea name="observacoes" placeholder="Detalhes que considera importantes para a criação"></textarea>
+  </div>
+
+  <p style="font-size:14px;color:#666;margin-top:10px;">
+    Este briefing terá caráter de orientação estratégica e criativa, não substituindo serviços jurídicos ou contábeis.
+  </p>
+
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_next" value="https://grupoluviah.com/form-sucesso">
+
+  <button type="button" class="btn prev btn-prev">Voltar</button>
+  <button type="submit" class="btn">Enviar Briefing</button>
+</div>
+
+</form>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<script src="https://unpkg.com/lucide@latest"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<script src="script.js"></script>
+<script>
+    lucide.replace();
+</script>
+
+</body>
+</html>
