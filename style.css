@@ -1,5 +1,4 @@
 .header-fixo {
-    height: 80px;
     width: 100%;
     position: fixed;
     top: 0;
@@ -22,7 +21,7 @@
     flex-shrink: 0;      
     margin-right: 10px;  
 }
-
+}
 .header-nav {
     display: flex;
     align-items: center;
@@ -515,6 +514,22 @@ textarea {
   gap: 8px;
   transition: 0.2s;
 }
+.btn-prev{
+  width: 100%;
+  padding: 14px;
+  background: white;
+  border: none;
+  color: #102040;
+  font-size: 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  transition: 0.2s;
+}
 .btn:hover {
   background: #6896BE;
 }
@@ -961,10 +976,6 @@ a {
     .planos-header h2 {
         font-size: 28px;
     }
-
-    .header-fixo{
-      display: none;
-    }
 }
 
 .plano-title {
@@ -978,9 +989,34 @@ a {
     color: #1a3975
 }
 
-#services,
-#portfolio,
-#about,
-#contact {
-    scroll-margin-top: 120px;
+/* === FORMULÁRIO DE BRIEFING (1 COLUNA) === */
+.contact-section .grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+}
+
+.contact-section .form-card {
+  width: 100%;
+  max-width: 720px;
+}
+
+.form-step {
+  display: none;
+  animation: fade 0.3s ease;
+}
+
+.form-step.active {
+  display: block;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

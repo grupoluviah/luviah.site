@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Luviah Soluções Empresariais</title>
+
+    <meta name="description" content="Consultoria, auditoria, identidade visual, mentoria e soluções empresariais para gestores e empreendedores." />
+    <meta name="keywords" content="mentoria, treinamento, gestão, finanças, marketing" />
+    <meta name="author" content="Grupo Luviah" />
+
+    <meta property="og:title" content="Luviah Soluções Empresariais" />
+    <meta property="og:description" content="Transformando ideias em projetos de sucesso." />
+    <meta property="og:image" content="logo.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://grupoluviah.com" />
+
+    <link rel="icon" href="logo.png" type="image/png" /> 
+
+    <meta name="theme-color" content="#102040" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+<header class="header-fixo">
+    <div class="header-container">
+
+        <img src="logo.png" alt="Logo" class="header-logo">
+
+        <nav class="header-nav">
+            <a href="index.html#services">Serviços</a>
+            <a href="index.html#portfolio">Portfolio</a>
+            <a href="index.html#about">Sobre</a>
+            <a href="index.html#contact" class="btn-contato">Contato</a>
+        </nav>
+
+    </div>
+</header>
+
+<main>
+
+<section id="contact" class="contact-section">
+  <div class="container">
+
+    <div class="text-center">
+      <h2 class="title">Gestão <span>Financeira</span></h2>
+      <p class="subtitle">Preencha o formulário para iniciarmos seu projeto.</p>
+    </div>
+
+    <div class="grid">
+
+      <div class="form-card">
+
+<form action="https://formsubmit.co/site@grupoluviah.com" method="post">
+
+<!-- ================= ETAPA 1 ================= -->
+<div class="form-step active">
+  <h3 class="form-step-title">Identificação da Empresa</h3>
+  <p class="form-step-subtitle">Informações básicas para entendermos a estrutura do seu negócio.</p>
+
+  <div class="form-grid">
+    <div class="field"><label>Razão Social</label><input type="text" name="razao_social" placeholder="Ex: Luviah Soluções Empresariais Ltda" required></div>
+    <div class="field"><label>Nome Fantasia</label><input type="text" name="nome_fantasia" placeholder="Ex: Grupo Luviah"></div>
+    <div class="field"><label>CNPJ</label><input type="text" name="cnpj" placeholder="00.000.000/0000-00"></div>
+    <div class="field"><label>Segmento de Atuação</label><input type="text" name="segmento" placeholder="Ex: Consultoria, Comércio, Serviços"></div>
+    <div class="field"><label>Tempo de Mercado</label><input type="text" name="tempo_mercado" placeholder="Ex: 3 anos"></div>
+    <div class="field"><label>Número de Sócios</label><input type="number" name="num_socios" placeholder="Ex: 2"></div>
+    <div class="field"><label>Número de Funcionários</label><input type="number" name="num_funcionarios" placeholder="Ex: 10"></div>
+    <div class="field"><label>Regime Tributário</label><input type="text" name="regime_tributario" placeholder="Ex: Simples Nacional"></div>
+    <div class="field"><label>Contador / Escritório Contábil</label><input type="text" name="contador" placeholder="Nome do contador ou escritório"></div>
+    <div class="field"><label>Contato do Responsável Financeiro</label><input type="text" name="contato_financeiro" placeholder="Nome, telefone ou e-mail"></div>
+  </div>
+
+  <button type="button" class="btn next">Continuar</button>
+</div>
+
+<!-- ================= ETAPA 2 ================= -->
+<div class="form-step">
+  <h3 class="form-step-title">Objetivo e Momento Financeiro</h3>
+  <p class="form-step-subtitle">Entenda-se o cenário financeiro atual da empresa.</p>
+
+  <div class="field">
+    <label>Qual a principal dor financeira hoje?</label>
+    <label><input type="checkbox" name="dor_financeira[]" value="Falta de controle"> Falta de controle financeiro</label>
+    <label><input type="checkbox" name="dor_financeira[]" value="Desorganização"> Desorganização de contas</label>
+    <label><input type="checkbox" name="dor_financeira[]" value="Lucro desconhecido"> Não sabe se a empresa dá lucro</label>
+    <label><input type="checkbox" name="dor_financeira[]" value="Fluxo de caixa"> Dificuldade com fluxo de caixa</label>
+    <label><input type="checkbox" name="dor_financeira[]" value="Crescimento sem planejamento"> Crescimento sem planejamento</label>
+    <label><input type="checkbox" name="dor_financeira[]" value="Redução de custos"> Redução de custos</label>
+    <label><input type="checkbox" name="dor_financeira[]" value="Crédito/investimento"> Preparação para crédito ou investimento</label>
+    <input type="text" name="dor_outros" placeholder="Outro (opcional)">
+  </div>
+
+  <div class="field">
+    <label>A empresa possui controle financeiro?</label>
+    <label><input type="radio" name="controle_financeiro" value="Sim"> Sim</label>
+    <label><input type="radio" name="controle_financeiro" value="Não"> Não</label>
+  </div>
+
+  <div class="field">
+    <label>Como esse controle é feito?</label>
+    <label><input type="checkbox" name="tipo_controle[]" value="Planilha"> Planilha</label>
+    <label><input type="checkbox" name="tipo_controle[]" value="ERP"> Sistema / ERP</label>
+    <label><input type="checkbox" name="tipo_controle[]" value="Anotações"> Caderno / Anotações</label>
+  </div>
+
+  <div class="field">
+    <label>Existe separação entre finanças pessoais e empresariais?</label>
+    <label><input type="radio" name="separacao_pf_pj" value="Sim"> Sim</label>
+    <label><input type="radio" name="separacao_pf_pj" value="Não"> Não</label>
+  </div>
+
+  <div class="field">
+    <label>Frequência de atualização financeira</label>
+    <select name="frequencia">
+      <option value="">Selecione</option>
+      <option>Diária</option>
+      <option>Semanal</option>
+      <option>Mensal</option>
+      <option>Irregular</option>
+    </select>
+  </div>
+
+  <button type="button" class="btn prev btn-prev">Voltar</button>
+  <button type="button" class="btn next">Continuar</button>
+</div>
+
+<!-- ================= ETAPA 3 ================= -->
+<div class="form-step">
+  <h3 class="form-step-title">Estrutura Financeira e Receitas</h3>
+
+  <div class="field"><label>Quantidade de contas bancárias</label><input type="number" name="qtd_contas" placeholder="Ex: 2"></div>
+  <div class="field"><label>Bancos utilizados</label><input type="text" name="bancos" placeholder="Ex: Banco do Brasil, Nubank"></div>
+
+  <div class="field">
+    <label>Possui conta PJ?</label>
+    <label><input type="radio" name="conta_pj" value="Sim"> Sim</label>
+    <label><input type="radio" name="conta_pj" value="Não"> Não</label>
+  </div>
+
+  <div class="field">
+    <label>Meios de recebimento</label>
+    <label><input type="checkbox" name="meios[]" value="Pix"> Pix</label>
+    <label><input type="checkbox" name="meios[]" value="Dinheiro"> Dinheiro</label>
+    <label><input type="checkbox" name="meios[]" value="Cartão"> Cartão</label>
+    <label><input type="checkbox" name="meios[]" value="Boleto"> Boleto</label>
+    <label><input type="checkbox" name="meios[]" value="Outros"> Outros</label>
+  </div>
+
+  <div class="field"><label>Principais fontes de receita</label><textarea name="fontes_receita" placeholder="Descreva os principais produtos ou serviços"></textarea></div>
+  <div class="field"><label>Receita média mensal</label><input type="text" name="receita_media" placeholder="Ex: R$ 50.000"></div>
+  <div class="field"><label>Ticket médio</label><input type="text" name="ticket_medio" placeholder="Ex: R$ 350"></div>
+
+  <button type="button" class="btn prev btn-prev">Voltar</button>
+  <button type="button" class="btn next">Continuar</button>
+</div>
+
+<!-- ================= ETAPA 4 ================= -->
+<div class="form-step">
+  <h3 class="form-step-title">Despesas, Dívidas e Fluxo de Caixa</h3>
+
+  <div class="field"><label>Principais despesas fixas</label><textarea name="despesas_fixas" placeholder="Aluguel, salários, sistemas, etc."></textarea></div>
+  <div class="field"><label>Principais despesas variáveis</label><textarea name="despesas_variaveis" placeholder="Comissões, insumos, impostos variáveis"></textarea></div>
+  <div class="field"><label>Custos com pessoal</label><input type="text" name="custos_pessoal" placeholder="Ex: R$ 15.000"></div>
+  <div class="field"><label>Despesas financeiras</label><input type="text" name="despesas_financeiras" placeholder="Juros, taxas bancárias, maquininhas"></div>
+
+  <div class="field">
+    <label>Possui financiamentos ou empréstimos?</label>
+    <label><input type="radio" name="emprestimos" value="Sim"> Sim</label>
+    <label><input type="radio" name="emprestimos" value="Não"> Não</label>
+  </div>
+
+  <div class="field"><label>Valor total das dívidas</label><input type="text" name="dividas" placeholder="Ex: R$ 120.000"></div>
+  <div class="field"><label>Parcelamentos existentes</label><textarea name="parcelamentos" placeholder="Simples, INSS, empréstimos, etc."></textarea></div>
+
+  <button type="button" class="btn prev btn-prev">Voltar</button>
+  <button type="button" class="btn next">Continuar</button>
+</div>
+
+<!-- ================= ETAPA 5 ================= -->
+<div class="form-step">
+  <h3 class="form-step-title">Relatórios, Acesso e Alinhamento Final</h3>
+
+  <div class="field">
+    <label>Relatórios desejados</label>
+    <label><input type="checkbox" name="relatorios[]" value="Fluxo de Caixa"> Fluxo de Caixa</label>
+    <label><input type="checkbox" name="relatorios[]" value="DRE"> DRE Gerencial</label>
+    <label><input type="checkbox" name="relatorios[]" value="Despesas"> Relatório de Despesas</label>
+    <label><input type="checkbox" name="relatorios[]" value="Receitas"> Relatório de Receitas</label>
+    <label><input type="checkbox" name="relatorios[]" value="Projeções"> Projeções Financeiras</label>
+  </div>
+
+  <div class="field">
+    <label>Nível de aceso da Luviah sobre a Gestão Financeira</label>
+    <select name="nivel_acesso">
+      <option value="">Selecione</option>
+      <option>Apenas controle e relatório</option>
+      <option>Controle + organização</option>
+      <option>Controle + planejamento</option>
+      <option>Controle + planejamento + apoio à decisão</option>
+    </select>
+  </div>
+
+  <div class="field">
+    <label>Observações finais</label>
+    <textarea name="observacoes" placeholder="Restrições internas, expectativas ou informações adicionais"></textarea>
+  </div>
+
+  <p style="font-size:14px;color:#666;margin-top:10px;">
+    A gestão financeira terá caráter organizacional e gerencial, não substituindo serviços contábeis, fiscais ou jurídicos.
+  </p>
+
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_next" value="https://grupoluviah.com/sucesso/">
+
+  <button type="button" class="btn prev btn-prev">Voltar</button>
+  <button type="submit" class="btn">Enviar Briefing</button>
+</div>
+
+</form>
+
+
+
+
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<script src="https://unpkg.com/lucide@latest"></script>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</main>
+
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <div class="footer-col">
+            <img src="logo-footer.png" class="footer-logo" alt="">
+            <p>Soluções empresariais para transformar suas ideias em projetos de sucesso.</p>
+        </div>
+
+        <div class="footer-col">
+            <h3>Serviços</h3>
+            <p>Consultoria e Auditoria</p>
+            <p>Mentoria e Treinamento</p>
+            <p>Identidade Visual</p>
+            <p>Produção Musical</p>
+        </div>
+
+        <div class="footer-col">
+            <h3>Contato</h3>
+            <p>contato@grupoluviah.com</p>
+            <p>+55 (94) 99254-0402</p>
+            <p>
+                Rua Rio Claro, 204b, Beira Rio<br>
+                Parauapebas - PA, 68515-000
+            </p>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        © 2024 Luviah Soluções Empresariais. Todos os direitos reservados.
+    </div>
+
+</footer>
+
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+<script src="script.js"></script>
+
+
+<script>
+    lucide.replace(); 
+</script>
+
+
+</body>
+</html>
+
+
