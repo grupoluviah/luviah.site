@@ -1020,3 +1020,15 @@ a {
     transform: translateY(0);
   }
 }
+/* Esconder header no mobile */
+@media (max-width: 768px) {
+  .header-fixo {
+    display: none;
+  }
+
+  /* Remove o espaço que o header fixo costuma empurrar no topo */
+  body {
+    padding-top: 0 !important;
+  }
+}
+
